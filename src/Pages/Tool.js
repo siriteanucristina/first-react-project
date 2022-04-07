@@ -1,4 +1,4 @@
-import ToolButton from "./ToolButton";
+import Button from './Button';
 
 function Tool({ name, surname, age, tool, onClick }) {
   return (
@@ -7,7 +7,7 @@ function Tool({ name, surname, age, tool, onClick }) {
       <h3>My surname is {surname}.</h3>
       <h4>I am {age} years old.</h4>
       <p>My favorite design tool is {tool}.</p>
-      <ToolButton onClick={onClick}>Click me</ToolButton>
+      <Button onClick={onClick}>Click me</Button>
     </div>
   );
 }
