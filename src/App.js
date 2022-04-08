@@ -1,11 +1,11 @@
 import "./Style/App.css";
+import "./Style/Button.css";
+import Button from "./Components/Button";
+// import Form from "./Components/Form";
+// import ReusableForms from "./Components/ReusableForms";
+// import "./Style/ReusableForms.css";
 // import Card from "./Pages/Card";
 // import Home from "./Pages/Home";
-import ReusableButton from "./Components/ReusableButton";
-import './Style/ReusableButton.css'
-// import Form from "./Components/Form";
-import ReusableForms from "./Components/ReusableForms";
-import './Style/ReusableForms.css'
 // import ReusableCard from "./Components/ReusableCard";
 // import ConditionalRendering from "./Pages/ConditionalRendering";
 // import FunctionClick from "./Pages/FunctionClick";
@@ -15,45 +15,57 @@ import './Style/ReusableForms.css'
 // import ShowContent from "./Pages/ShowContent";
 
 function App() {
-
   return (
     <div className="App">
       <div className="content">
-        {/* <h2> Tipuri de butoane </h2>
+        <h1> Tipuri de butoane: </h1>
+        <h4>Butonul clasic</h4>
+        <Button>Basic</Button>
+
+        <h4>Exemple de butoane</h4>
+        <Button type="default">Default</Button>
+        <Button type="primary">Primary</Button>
+        <Button type="secondary">Secondary</Button>
+        <Button type="success">Success</Button>
+        <Button type="info">Info</Button>
+        <Button type="warning">Warning</Button>
+        <Button type="danger">Danger</Button>
+        <Button type="dark">Dark</Button>
+        <Button type="light">Light</Button>
+        <Button type="link">Link</Button>
+        <Button type="active">Active</Button>
+        <Button type="disabled">Disabled</Button>
+
         <div>
-          <ReusableButton>Basic</ReusableButton>
-          <ReusableButton type="default">Default</ReusableButton>
-          <ReusableButton type="primary">Primary</ReusableButton>
-          <ReusableButton type="outline-primary">Primary</ReusableButton>
-          <ReusableButton type="secondary">Secondary</ReusableButton>
-          <ReusableButton type="outline-secondary">Secondary</ReusableButton>
-          <ReusableButton type="success">Success</ReusableButton>
-          <ReusableButton type="outline-success">Succes</ReusableButton>
-          <ReusableButton type="info">Info</ReusableButton>
-          <ReusableButton type="outline-info">Info</ReusableButton>
-          <ReusableButton type="warning">Warning</ReusableButton>
-          <ReusableButton type="outline-warning">Warning</ReusableButton>
-          <ReusableButton type="danger">Danger</ReusableButton>
-          <ReusableButton type="outline-danger">Danger</ReusableButton>
-          <ReusableButton type="dark">Dark</ReusableButton>
-          <ReusableButton type="outline-dark">Dark</ReusableButton>
-          <ReusableButton type="light">Light</ReusableButton>
-          <ReusableButton type="outline-light">Light</ReusableButton>
-          <ReusableButton type="link">Link</ReusableButton>
-          <ReusableButton type="large">Large</ReusableButton>
-          <ReusableButton type="small">Small</ReusableButton>
-          <ReusableButton type="xsmall">XSmall</ReusableButton>
-          <ReusableButton type="active">Active</ReusableButton>
-          <ReusableButton type="disabled">Disabled</ReusableButton>
-        </div> */}
+          <h4>Outline butoane</h4>
+          <Button type="outline-primary">Primary</Button>
+          <Button type="outline-secondary">Secondary</Button>
+          <Button type="outline-success">Succes</Button>
+          <Button type="outline-info">Info</Button>
+          <Button type="outline-warning">Warning</Button>
+          <Button type="outline-danger">Danger</Button>
+          <Button type="outline-dark">Dark</Button>
+          <Button type="outline-light">Light</Button>
+        </div>
+
+        <div>
+          <h4>Sizes buttons</h4>
+          <Button type="primary" size="large">
+            Large
+          </Button>
+          <Button type="primary" size="small">
+            Small
+          </Button>
+          <Button type="primary" size="xsmall">
+            XSmall
+          </Button>
+        </div>
 
         {/* <Form /> */}
 
-        <ReusableForms />
+        {/* <ReusableForms /> */}
 
         {/* <ShowContent /> */}
-
-
 
         {/* <ReusableCard /> */}
 
@@ -69,7 +81,6 @@ function App() {
 
         <ClassClick /> */}
 
-
         {/* <div className="stylecard">
           <Card title='Fluture'
             imageURL='https://naturescu.com/wp-content/uploads/2021/06/Fluture-coada-randunicii.jpg'
@@ -81,8 +92,8 @@ function App() {
           <h1>Tipurile de Formulare</h1>
           <Forms />
         </div> */}
-      </div >
-    </div >
+      </div>
+    </div>
   );
 }
 
