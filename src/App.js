@@ -1,11 +1,12 @@
-import "./Style/App.css";
+import "./Style/app.css";
 // import "./Style/Button.css";
-// import Button from "./Components/Button";
-import "./Style/Form.css";
-import Input from "./Components/Input";
-import Textare from "./Components/Textare";
-import Select from "./Components/Select";
-// import Card from "./Pages/Card";
+// // import Button from "./Components/Button";
+// import "./Style/Form.css";
+// import Input from "./Components/Input";
+// import Textare from "./Components/Textare";
+// import Select from "./Components/Select";
+import "./Style/card.css";
+import Card from "./Components/Card";
 // import Home from "./Pages/Home";
 // import ConditionalRendering from "./Pages/ConditionalRendering";
 // import FunctionClick from "./Pages/FunctionClick";
@@ -59,7 +60,7 @@ function App() {
           </Button>
         </div> */}
 
-        <h1> Formular </h1>
+        {/* <h1> Formular </h1>
         <form>
           <h4>Enter your name:</h4>
           <Input type="text" />
@@ -122,7 +123,15 @@ function App() {
           <br />
           <Input type="submit" />
           <Input type="reset" />
-        </form>
+        </form> */}
+
+        <Card
+          title="Fluture"
+          imageURL="https://naturescu.com/wp-content/uploads/2021/06/Fluture-coada-randunicii.jpg"
+          text="Acești fluturi au peste 500 de specii și aparțin familiei Papilionidae. Sunt foarte mari, colorați și foarte răspândiți, majoritatea speciilor lor se găsesc pe fiecare continent, cu excepția Antarcticii."
+          hyperlink="https://naturescu.com/natura/13-tipuri-diferite-de-fluturi/"
+          hyperlinktext="More information"
+        />
 
         {/* <UseContextHook />  */}
 
@@ -135,13 +144,6 @@ function App() {
         <FunctionClick />
 
         <ClassClick /> */}
-
-        {/* <div className="stylecard">
-          <Card title='Fluture'
-            imageURL='https://naturescu.com/wp-content/uploads/2021/06/Fluture-coada-randunicii.jpg'
-            body='Acești fluturi au peste 500 de specii și aparțin familiei Papilionidae. Sunt foarte mari, colorați și foarte răspândiți, majoritatea speciilor lor se găsesc pe fiecare continent, cu excepția Antarcticii.'
-          />
-        </div> */}
       </div>
     </div>
   );
