@@ -110,15 +110,15 @@ function App() {
         <h1> Formular de tip selectare </h1>
         <form>
           <h4>Select the dream car: </h4>
-          <Select>
-            <option value="1">Volvo</option>
-            <option value="2" selected>
-              Mercedes
-            </option>
-            <option value="3">Toyota</option>
-            <option value="4">Audi</option>
-            <option value="5">BMW</option>
-          </Select>{" "}
+          <Select
+            data={[
+              { value: 1, label: "Volvo" },
+              { value: 2, label: "BMW" },
+              { value: 3, label: "Mercedes" },
+              { value: 4, label: "Audi" },
+              { value: 5, label: "Opel" },
+            ]}
+          />
           <br />
           <Input type="submit" />
           <Input type="reset" />
