@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./Style/app.css";
 // import "./Style/Button.css";
 // // import Button from "./Components/Button";
@@ -7,15 +8,19 @@ import "./Style/app.css";
 // import Select from "./Components/Select";
 import "./Style/card.css";
 import Card from "./Components/Card";
+import Dropdown from "./Components/Dropdown";
 // import Home from "./Pages/Home";
 // import ConditionalRendering from "./Pages/ConditionalRendering";
 // import FunctionClick from "./Pages/FunctionClick";
 // import ClassClick from "./Pages/ClassClick";
-// import { Component } from "react";
 // import UseContextHook from "./Pages/UseContextHook";
 // import ShowContent from "./Pages/ShowContent";
 
+const items = ["banana", "apple", "orange", "pear", "grape", "berry"];
+
 function App() {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <div className="App">
       <div className="content">
@@ -131,6 +136,12 @@ function App() {
           text="Acești fluturi au peste 500 de specii și aparțin familiei Papilionidae. Sunt foarte mari, colorați și foarte răspândiți, majoritatea speciilor lor se găsesc pe fiecare continent, cu excepția Antarcticii."
           hyperlink="https://naturescu.com/natura/13-tipuri-diferite-de-fluturi/"
           hyperlinktext="More information"
+        />
+
+        <Dropdown
+          showDropdown={showDropdown}
+          setShowDropdown={() => setShowDropdown(!showDropdown)}
+          items={items}
         />
 
         {/* <UseContextHook />  */}

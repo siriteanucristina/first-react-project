@@ -6,7 +6,7 @@ function Card({ title, imageURL, text, hyperlink, hyperlinktext }) {
   return (
     <div className="container">
       <div className="container-image">
-        <img src={imageURL} />
+        <img src={imageURL} alt="Fluture" />
       </div>
       <div className="container-title">
         <h3>{title}</h3>
