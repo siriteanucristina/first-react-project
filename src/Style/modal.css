@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.modal-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 15px;
+}
+.modal-header {
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 2px solid #dddddd;
+}
+.modal-header__title {
+  text-align: center;
+}
+.close {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+.modal-content {
+  border-bottom: 2px solid #dddddd;
+  padding: 30px 0;
+}
+.modal-footer {
+  padding: 20px 0;
+}
+.modal-submit {
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 60px;
+}
+.modal-close {
+  border-radius: 5px;
+  width: 60px;
+}

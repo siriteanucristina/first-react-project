@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Style/app.css";
-// import "./Style/Button.css";
-// // import Button from "./Components/Button";
+// import "./Style/button.css";
+// import Button from "./Components/Button";
 // import "./Style/Form.css";
 // import Input from "./Components/Input";
 // import Textare from "./Components/Textare";
 // import Select from "./Components/Select";
-import "./Style/card.css";
-import Card from "./Components/Card";
-import Dropdown from "./Components/Dropdown";
+// import "./Style/card.css";
+// import Card from "./Components/Card";
+// import Dropdown from "./Components/Dropdown";
+import Modal from "./Components/Modal";
 // import Home from "./Pages/Home";
 // import ConditionalRendering from "./Pages/ConditionalRendering";
 // import FunctionClick from "./Pages/FunctionClick";
@@ -20,6 +21,10 @@ const items = ["banana", "apple", "orange", "pear", "grape", "berry"];
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
+
+  const [modal, setModal] = useState(false);
+
+  const Move = () => setModal(!modal);
 
   return (
     <div className="App">
@@ -130,7 +135,7 @@ function App() {
           <Input type="reset" />
         </form> */}
 
-        <Card
+        {/* <Card
           title="Fluture"
           imageURL="https://naturescu.com/wp-content/uploads/2021/06/Fluture-coada-randunicii.jpg"
           text="Acești fluturi au peste 500 de specii și aparțin familiei Papilionidae. Sunt foarte mari, colorați și foarte răspândiți, majoritatea speciilor lor se găsesc pe fiecare continent, cu excepția Antarcticii."
@@ -142,7 +147,11 @@ function App() {
           showDropdown={showDropdown}
           setShowDropdown={() => setShowDropdown(!showDropdown)}
           items={items}
-        />
+        /> */}
+
+        <button onClick={() => Move()}>Modal</button>
+
+        <Modal show={modal} close={Move} />
 
         {/* <UseContextHook />  */}
 
