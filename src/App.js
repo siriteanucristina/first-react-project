@@ -257,7 +257,6 @@ function App() {
           showDropdown={showDropdown}
           setShowDropdown={() => setShowDropdown(!showDropdown)}
           items={items}
-          button="Click me"
         />
 
         <button onClick={() => Move()}>Modal</button>
